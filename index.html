@@ -156,40 +156,13 @@ lang="ru" говорит, что язык сайта - русский.
     </nav>
     <!-- Видео-блок -->
     <section class="hero-video mb-5">
-        <!--
-        hero-video - ваш класс для секции (можно придумать любое название)
-        mb-5 - добавляет отступ снизу
-        -->
-        <div class="container d-flex justify-content-center">
-            <!--
-            container - ограничивает ширину и центрирует контент
-            d-flex - делает элементы в строке, а не друг под другом
-            justify-content-center - центрирует элементы по горизонтали
-            -->
-            <div class="text-center w-100">
-                <!--
-                text-center - выравнивает текст по центру
-                w-100 - делает ширину 100%
-                -->
-                <h2 class="mb-4">Какие курсы сейчас актуальны</h2>
-                <!-- mb-4 - добавляет отступ снизу -->
-                <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
-                    <!--
-                    ratio ratio-16x9 - делает видео адаптивным с соотношением сторон 16:9
-                    mx-auto - центрирует элемент по горизонтали
-                    style="max-width: 800px;" - ограничивает максимальную ширину видео
-                    -->
-                    <iframe src="https://youtu.be/8hWceB5FGOc?si=LtARBGplk5IOwWYE" frameborder="0" 
-                     allowfullscreen></iframe>
-                    <!-- iframe - тег для вставки видео с YouTube -->
-                    <!-- src - ссылка на видео -->
-                    <!-- frameborder="0" - убирает рамку вокруг видео -->
-                    <!-- allowfullscreen - позволяет разворачивать видео на весь экран -->
-                </div>
-            </div>
+    <div class="container d-flex flex-column align-items-center">
+        <h2 class="mb-4 text-center">Стоит ли покупать курсы?</h2>
+        <div class="ratio ratio-16x9" style="max-width: 800px; width: 100%;">
+            <iframe src="https://www.youtube.com/embed/8hWceB5FGOc" frameborder="0" allowfullscreen></iframe>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Товары без карусели -->
     <section class="container mb-5">
         <!--
